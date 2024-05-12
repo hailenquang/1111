@@ -2,9 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package MenuAdmin.QuanLiSP.ClikeSp;
+package Menu_Admin_3.SanPham.ClikeSp;
 
-import MenuAdmin.QuanLiSP.DanhsachSP;
+import Menu_Admin_3.SanPham.Form_QLSanPham;
 
 /**
  *
@@ -249,7 +249,7 @@ public class Samsum5 extends javax.swing.JFrame {
     }//GEN-LAST:event_jToggleButton2ActionPerformed
 
     private void jToggleButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton4ActionPerformed
-        DanhsachSP menuSp = new DanhsachSP(); 
+        Form_QLSanPham menuSp = new Form_QLSanPham(); 
     menuSp.setVisible(true); 
     this.dispose(); 
     }//GEN-LAST:event_jToggleButton4ActionPerformed

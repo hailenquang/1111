@@ -4,7 +4,6 @@
  */
 package Menu_Admin_3.SanPham.ClikeThemSp;
 import MenuAdmin.QuanLiSP.ClikeThemSp.Danhsach1;
-import MenuAdmin.QuanLiSP.DanhsachSP;
 import Menu_Admin_3.SanPham.Form_QLSanPham;
 import java.awt.Font;
 import java.awt.Image;

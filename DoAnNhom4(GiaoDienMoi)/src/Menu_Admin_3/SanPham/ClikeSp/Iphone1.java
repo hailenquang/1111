@@ -4,7 +4,8 @@
  */
 package Menu_Admin_3.SanPham.ClikeSp;
 
-import MenuAdmin.QuanLiSP.Form_QLSanPham;
+
+import Menu_Admin_3.SanPham.Form_QLSanPham;
 
 /**
  *

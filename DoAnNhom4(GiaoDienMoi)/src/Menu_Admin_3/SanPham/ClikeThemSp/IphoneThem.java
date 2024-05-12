@@ -1,9 +1,5 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package Menu_Admin_3.SanPham.ClikeThemSp;
-
+import MenuAdmin.QuanLiSP.ClikeThemSp.Danhsach1;
 import Menu_Admin_3.SanPham.Form_QLSanPham;
 import java.awt.Font;
 import java.awt.Image;
@@ -21,25 +17,37 @@ import javax.swing.event.ListSelectionListener;
 import javax.swing.plaf.FontUIResource;
 import javax.swing.plaf.basic.BasicInternalFrameUI;
 import javax.swing.table.DefaultTableModel;
+
+
+/**
+ *
+ * @author Quangratdeptrai
+ */
 public class IphoneThem extends javax.swing.JFrame {
-    private List<Danhsach1> list = new ArrayList<>();
+     private List<Danhsach1> list = new ArrayList<>();
     private Danhsach1 y;
     private static int pos = 0;
     private static int check = 0;
     private JPanel panel;
+    /**
+     * Creates new form IphoneThem
+     */
     public IphoneThem() {
-      initComponents();
+       initComponents();
         init();
         String imagePath = "/icon/rm1.jpg";
         this.getRootPane().setBorder(javax.swing.BorderFactory.createEmptyBorder(0,0,0,0));
-        list.add(new Danhsach1("Samsung Galaxy S23 Ultra  ", "Androi ", "Chụp ảnh và chơi game", "8G","256G ","Sac sieu nhanh", "Chống va đập và chống thấm nước ", 24990000, "/icon/sm1.jpg" ));
-        list.add(new Danhsach1(" Samsung Galaxy S23 ", "Androi ", "Chụp ảnh và chơi game", "12G","256G ", "Sac sieu nhanh", "Chống va đập và chống thắm nước",32190000, "/icon/sm2.jpg"));
-        list.add(new Danhsach1("Samsung Galaxy S23", "Androi ", "Chụp ảnh và chơi game", "8G"," 256G","Sac sieu nhanh", "Chống va đập vfa chống thấm nước ", 21990000, "/icon/sm3.jpg"));
-        list.add(new Danhsach1("Samsung Galaxy Z Fold5", "Androi ", "Chụp ảnh và chơi game", "12G","456G ","Sac sieu nhanh", "Chống va đập và chống thấm nước ", 35990000, "/icon/sm4.jpg"));
-        list.add(new Danhsach1("Samsung Galaxy Z ", "Androi ", "Chụp ảnh và chơi game", "8G","256G ","Sac sieu nhanh", "Chống va đập và chống thấm nước ", 31390000, "/icon/sm5.jpg"));
+        list.add(new Danhsach1("Iphone 15   ", "Ios ", "Chup ảnh và chơi game ", "8G","265G","Sac sieu nhanh","Chống va đập, chống thấm nước ", 20690000, "/icon/ip1.jpg"));
+        list.add(new Danhsach1(" Iphone 13   ", " Ios ", "Chup ảnh và chơi game", "4G", "128G","Sac sieu nhanh", "Chống va đập, chống thấm nước ", 14990000, "/icon/ip2.jpg"));
+        list.add(new Danhsach1("Iphone 14  Plus ", "Ios ", "Chup ảnh và chơi game", "6G", "128G","Sac sieu nhanh", "Chống va đập, chống thấm nước ", 20690000, "/icon/ip3.jpg"));
+        list.add(new Danhsach1("Iphone 15  Plus ", "Ios ", "Chup ảnh và chơi game", "6G", "128G","Sac sieu nhanh", "Chống va đập, chống thấm nước ", 23690000, "/icon/ip4.jpg"));
+        list.add(new Danhsach1("Iphone 11", "Ios ", "Chup ảnh và chơi game",  "4G", "64G", "Sac sieu nhanh", "Chống va đập, chống thấm nước ", 8990000, "/icon/ip5.jpg"));
         View();
         ViewTable();
+        
     }
+   
+    
      public void View(){
         y = list.get(pos);
         this.txthang.setText(y.getHang());
@@ -60,7 +68,7 @@ public class IphoneThem extends javax.swing.JFrame {
     model.setNumRows(0);
     int n = 1;
     for (Danhsach1 y : list) {
-model.addRow(new Object[]{n++, y.getHang(),  y.getDt(), y.getNc(), y.getRam(), y.getDl(), y.getTn(), y.getTndb(),y.getGia(), y.getFileAvata()});
+        model.addRow(new Object[]{n++, y.getHang(),  y.getDt(), y.getNc(), y.getRam(), y.getDl(), y.getTn(), y.getTndb(),y.getGia()+"đ", y.getFileAvata()});
     }
     this.tblDanhsach.setRowHeight(20);
     tblDanhsach.getSelectionModel().addListSelectionListener(new ListSelectionListener() {
@@ -98,6 +106,7 @@ model.addRow(new Object[]{n++, y.getHang(),  y.getDt(), y.getNc(), y.getRam(), y
     Avata.setIcon(new ImageIcon(img));
     }
     @SuppressWarnings("unchecked")
+
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
@@ -338,13 +347,14 @@ model.addRow(new Object[]{n++, y.getHang(),  y.getDt(), y.getNc(), y.getRam(), y
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addComponent(jToggleButton1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addGap(366, 366, 366))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(17, 17, 17)
-                        .addComponent(jToggleButton1)
-                        .addGap(399, 399, 399)
-                        .addComponent(jLabel1))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(150, 150, 150)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -388,9 +398,9 @@ model.addRow(new Object[]{n++, y.getHang(),  y.getDt(), y.getNc(), y.getRam(), y
                                 .addGap(5, 5, 5)
                                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(78, 78, 78)
+                        .addGap(42, 42, 42)
                         .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 879, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(143, Short.MAX_VALUE))
+                .addContainerGap(76, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -457,14 +467,14 @@ model.addRow(new Object[]{n++, y.getHang(),  y.getDt(), y.getNc(), y.getRam(), y
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane1)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 988, Short.MAX_VALUE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 766, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 988, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -473,64 +483,24 @@ model.addRow(new Object[]{n++, y.getHang(),  y.getDt(), y.getNc(), y.getRam(), y
 
     private void tblDanhsachMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblDanhsachMouseClicked
         pos = this.tblDanhsach.getSelectedRow();
-        if (pos >= 0) { // Check if a row is selected
-            Danhsach1 selectedProduct = list.get(pos);
-            this.txthang.setText(selectedProduct.getHang());
-            this.txtdt.setText(selectedProduct.getDt());
-            this.txtnc.setText(selectedProduct.getNc());
-            this.txtdl.setText(selectedProduct.getDl());
-            this.txttn.setText(selectedProduct.getTn());
-            this.txttndb.setText(selectedProduct.getTndb());
-            this.txtram.setText(selectedProduct.getRam());
-            this.txtgia.setText(String.valueOf(selectedProduct.getGia()));
-            this.FileAvata.setText(selectedProduct.getFileAvata());
-        }
+    if (pos >= 0) { // Check if a row is selected
+        Danhsach1 selectedProduct = list.get(pos);
+        this.txthang.setText(selectedProduct.getHang());
+        this.txtdt.setText(selectedProduct.getDt());
+        this.txtnc.setText(selectedProduct.getNc());
+        this.txtdl.setText(selectedProduct.getDl());
+        this.txttn.setText(selectedProduct.getTn());
+        this.txttndb.setText(selectedProduct.getTndb());
+        this.txtram.setText(selectedProduct.getRam());
+        this.txtgia.setText(String.valueOf(selectedProduct.getGia()));
+        this.FileAvata.setText(selectedProduct.getFileAvata());
+    }
     }//GEN-LAST:event_tblDanhsachMouseClicked
 
     private void tblDanhsachKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tblDanhsachKeyReleased
         pos = this.tblDanhsach.getSelectedRow();
         View();
     }//GEN-LAST:event_tblDanhsachKeyReleased
-
-    private void ThongtinhMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ThongtinhMouseClicked
-        Thongtinh.setText(txthang.getText());
-    }//GEN-LAST:event_ThongtinhMouseClicked
-
-    private void ThongtinhActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ThongtinhActionPerformed
-
-    }//GEN-LAST:event_ThongtinhActionPerformed
-
-    private void Thongtinh2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Thongtinh2MouseClicked
-        Thongtinh2.setText(txtnc.getText());
-    }//GEN-LAST:event_Thongtinh2MouseClicked
-
-    private void Thongtinh2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Thongtinh2ActionPerformed
-
-    }//GEN-LAST:event_Thongtinh2ActionPerformed
-
-    private void Thongtinh3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Thongtinh3MouseClicked
-        Thongtinh3.setText(txttndb.getText());
-    }//GEN-LAST:event_Thongtinh3MouseClicked
-
-    private void Thongtinh3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Thongtinh3ActionPerformed
-
-    }//GEN-LAST:event_Thongtinh3ActionPerformed
-
-    private void Thongtinh4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Thongtinh4MouseClicked
-        Thongtinh4.setText(txtgia.getText()+" đ");
-    }//GEN-LAST:event_Thongtinh4MouseClicked
-
-    private void Thongtinh4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Thongtinh4ActionPerformed
-
-    }//GEN-LAST:event_Thongtinh4ActionPerformed
-
-    private void txtgiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtgiaActionPerformed
-
-    }//GEN-LAST:event_txtgiaActionPerformed
-
-    private void FileAvataActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FileAvataActionPerformed
-        //         setImage();
-    }//GEN-LAST:event_FileAvataActionPerformed
 
     private void btneditActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btneditActionPerformed
         OnOff(false,true);
@@ -572,27 +542,67 @@ model.addRow(new Object[]{n++, y.getHang(),  y.getDt(), y.getNc(), y.getRam(), y
 
     private void btnSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveActionPerformed
         String hang = this.txthang.getText();
-        int gia = Integer.parseInt(this.txtgia.getText());
-        String dt = this.txtdt.getText();
-        String nc = this.txtnc.getText();
-        String dl = this.txtdl.getText();
-        String tn = this.txttn.getText();
-        String tndb = this.txttndb.getText();
-        String ram = this.txtram.getText();
-        String fileAvata = this.FileAvata.getText();
+    int gia = Integer.parseInt(this.txtgia.getText());
+    String dt = this.txtdt.getText();
+    String nc = this.txtnc.getText();
+    String dl = this.txtdl.getText();
+    String tn = this.txttn.getText();
+    String tndb = this.txttndb.getText();
+    String ram = this.txtram.getText();
+    String fileAvata = this.FileAvata.getText();
+    
+    if (check == 1) {
+        list.add(new Danhsach1(hang, dt, nc, ram, dl, tn, tndb, gia, fileAvata));
 
-        if (check == 1) {
-            list.add(new Danhsach1(hang, dt, nc, ram, dl, tn, tndb, gia, fileAvata));
-
-            setImage(fileAvata);
-        }
-        if (check == -1) {
-            list.set(pos, new Danhsach1(hang, dt, nc, ram, dl, tn, tndb, gia, fileAvata));
-        }
-
-        View();
-        ViewTable();
+        setImage(fileAvata);
+    }
+    if (check == -1) {
+        list.set(pos, new Danhsach1(hang, dt, nc, ram, dl, tn, tndb, gia, fileAvata));
+    }
+    
+    View();
+    ViewTable();
     }//GEN-LAST:event_btnSaveActionPerformed
+
+    private void FileAvataActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FileAvataActionPerformed
+//         setImage();
+    }//GEN-LAST:event_FileAvataActionPerformed
+
+    private void txtgiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtgiaActionPerformed
+        
+    }//GEN-LAST:event_txtgiaActionPerformed
+
+    private void ThongtinhActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ThongtinhActionPerformed
+
+    }//GEN-LAST:event_ThongtinhActionPerformed
+
+    private void ThongtinhMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ThongtinhMouseClicked
+           Thongtinh.setText(txthang.getText());
+    }//GEN-LAST:event_ThongtinhMouseClicked
+
+    private void Thongtinh4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Thongtinh4ActionPerformed
+
+    }//GEN-LAST:event_Thongtinh4ActionPerformed
+
+    private void Thongtinh4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Thongtinh4MouseClicked
+        Thongtinh4.setText(txtgia.getText()+" đ");
+    }//GEN-LAST:event_Thongtinh4MouseClicked
+
+    private void Thongtinh3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Thongtinh3ActionPerformed
+
+    }//GEN-LAST:event_Thongtinh3ActionPerformed
+
+    private void Thongtinh3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Thongtinh3MouseClicked
+        Thongtinh3.setText(txttndb.getText());
+    }//GEN-LAST:event_Thongtinh3MouseClicked
+
+    private void Thongtinh2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Thongtinh2ActionPerformed
+
+    }//GEN-LAST:event_Thongtinh2ActionPerformed
+
+    private void Thongtinh2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Thongtinh2MouseClicked
+        Thongtinh2.setText(txtnc.getText());
+    }//GEN-LAST:event_Thongtinh2MouseClicked
 
     private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
         Form_QLSanPham menuSp = new Form_QLSanPham(); 
@@ -600,37 +610,8 @@ model.addRow(new Object[]{n++, y.getHang(),  y.getDt(), y.getNc(), y.getRam(), y
     this.dispose();
     }//GEN-LAST:event_jToggleButton1ActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(IphoneThem.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(IphoneThem.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(IphoneThem.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(IphoneThem.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-
-        /* Create and display the form */
+      
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new IphoneThem().setVisible(true);

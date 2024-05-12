@@ -1,7 +1,7 @@
 
 package Menu_Admin_3.SanPham.ClikeSp;
 
-import MenuAdmin.QuanLiSP.DanhsachSP;
+import Menu_Admin_3.SanPham.Form_QLSanPham;
 
 
 public class Samsum1 extends javax.swing.JFrame {
@@ -244,7 +244,7 @@ public class Samsum1 extends javax.swing.JFrame {
     }//GEN-LAST:event_jToggleButton2ActionPerformed
 
     private void jToggleButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton4ActionPerformed
-        DanhsachSP menuSp = new DanhsachSP(); 
+        Form_QLSanPham menuSp = new Form_QLSanPham(); 
     menuSp.setVisible(true); 
     this.dispose();
     }//GEN-LAST:event_jToggleButton4ActionPerformed
