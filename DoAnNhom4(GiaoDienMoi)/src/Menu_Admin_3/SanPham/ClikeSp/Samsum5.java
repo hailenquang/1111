@@ -78,7 +78,7 @@ public class Samsum5 extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel1.setText("THÔNG TINH SẢN PHẨM");
 
-        jLabel2.setText("Cấu hình Điện thoại Samsung Galaxy Z Fold5 5G 256GB");
+        jLabel2.setText("Cấu hình Điện thoại Samsung Galaxy Z Fold5 5G 512GB");
 
         jLabel3.setText("Màn hình:  Dynamic AMOLED 2XChính 7.6\" & Phụ 6.2\"Quad HD+ (2K+)");
 
@@ -92,7 +92,7 @@ public class Samsum5 extends javax.swing.JFrame {
 
         jLabel8.setText("RAM:  12 GB");
 
-        jLabel9.setText("Dung lượng lưu trữ:  256 GB");
+        jLabel9.setText("Dung lượng lưu trữ:  512 GB");
 
         jLabel10.setText("SIM:  2 Nano SIM hoặc 1 Nano SIM + 1 eSIMHỗ trợ 5G");
 
