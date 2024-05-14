@@ -41,18 +41,7 @@ public class Table extends JTable {
                     }
                     return cell;
 
-                }
-//                else if (o instanceof ModelAction) {
-//                    ModelAction data = (ModelAction) o;
-//                    Action cell = new Action(data);
-//                    if (selected) {
-//                        cell.setBackground(new Color(239, 244, 255));
-//                    } else {
-//                        cell.setBackground(Color.WHITE);
-//                    }
-//                    return cell;
-//                }
-                else {
+                } else {
                     Component com = super.getTableCellRendererComponent(jtable, o, selected, focus, i, i1);
                     setBorder(noFocusBorder);
                     com.setForeground(new Color(102, 102, 102));
@@ -66,15 +55,6 @@ public class Table extends JTable {
             }
         });
     }
-
-//    @Override
-//    public TableCellEditor getCellEditor(int row, int col) {
-//        if (col == 4) {
-//            return new TableCellAction();
-//        } else {
-//            return super.getCellEditor(row, col);
-//        }
-//    }
 
     public void addRow(Object[] row) {
         DefaultTableModel mod = (DefaultTableModel) getModel();

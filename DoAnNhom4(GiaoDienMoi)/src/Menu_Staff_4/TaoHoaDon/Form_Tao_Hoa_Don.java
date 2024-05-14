@@ -3095,7 +3095,7 @@ public final class Form_Tao_Hoa_Don extends javax.swing.JPanel {
                 + "     Date: " + jTxtDate.getText() + "\n"
                 + "     Purchase Id: " + purchaseId + "\n"
                 + "   *****************************************************************************************************\n"
-                + "     Item Name:\t\t\t\t" +"Quantity\t"+"Price($)\n\n");
+                + "     Item Name:\t\t\t\t" + "Quantity\t" + "Price($)\n\n");
     }
 
     private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
@@ -3109,11 +3109,11 @@ public final class Form_Tao_Hoa_Don extends javax.swing.JPanel {
             double price = qty * 1499;
             total += price;
             getTax((int) total);
-            jTextArea1.setText(jTextArea1.getText() + "     " + x + ". " + jLabel8.getText() + "\t\t\t\t" + price + "\n");
+            jTextArea1.setText(jTextArea1.getText() + "  " + x + ". " + jLabel8.getText() + "\t\t\t     " + qty + "\t" + price + "\n");
             dudate();
         } else {
             jCheckBox1.setSelected(false);
-
+            jSpinner1.setValue(0);
         }
     }
 
@@ -3153,7 +3153,7 @@ public final class Form_Tao_Hoa_Don extends javax.swing.JPanel {
             dudate();
         } else {
             jCheckBox5.setSelected(false);
-            jSpinner6.setValue(0);
+            jSpinner5.setValue(0);
         }
     }//GEN-LAST:event_jCheckBox5ActionPerformed
 
@@ -3168,11 +3168,11 @@ public final class Form_Tao_Hoa_Don extends javax.swing.JPanel {
             double price = qty * 1199;
             total += price;
             getTax((int) total);
-            jTextArea1.setText(jTextArea1.getText() + "     " + x + ". " + jLabel43.getText() + "\t\t\t\t" + price + "\n");
+            jTextArea1.setText(jTextArea1.getText() + "  " + x + ". " + jLabel43.getText() + "\t\t\t     " + qty + "\t" + price + "\n");
             dudate();
         } else {
             jCheckBox6.setSelected(false);
-
+            jSpinner6.setValue(0);
         }
     }//GEN-LAST:event_jCheckBox6ActionPerformed
 
@@ -3204,11 +3204,11 @@ public final class Form_Tao_Hoa_Don extends javax.swing.JPanel {
             double price = qty * 1099;
             total += price;
             getTax((int) total);
-            jTextArea1.setText(jTextArea1.getText() + "     " + x + ". " + jLabel29.getText() + "\t\t\t\t\t" + price + "\n");
+            jTextArea1.setText(jTextArea1.getText() + "  " + x + ". " + jLabel29.getText() + "\t\t\t     " + qty + "\t" + price + "\n");
             dudate();
         } else {
             jCheckBox4.setSelected(false);
-
+            jSpinner4.setValue(0);
         }
     }//GEN-LAST:event_jCheckBox4ActionPerformed
 

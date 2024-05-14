@@ -2,6 +2,7 @@ package Menu_Staff_4;
 
 import Menu_Staff_4.*;
 import Login_Register_2.FormLogin;
+import Menu_Admin_3.GoogleMap.GGMap;
 import Menu_Admin_3.HeThong.Form_He_Thong;
 import Menu_Admin_3.ModelMenu;
 import Menu_Staff_4.SanPham.Form_San_Pham;
@@ -60,7 +61,9 @@ public class Menu_Staff extends javax.swing.JFrame {
                     showForm(new Form_Tao_Hoa_Don());
                 case 2 ->
                     showForm(new Form_Danh_Sach_Hoa_Don());
-                case 3 ->
+                    case 3 ->
+                    showForm(new GGMap());
+                case 4 ->
                     showForm(new Form_He_Thong());
                 default -> {
                 }
@@ -69,6 +72,7 @@ public class Menu_Staff extends javax.swing.JFrame {
         menu.addMenu(new ModelMenu("Product", new ImageIcon(getClass().getResource("/icon/product.png"))));
         menu.addMenu(new ModelMenu("Create invoices", new ImageIcon(getClass().getResource("/icon/add.png"))));
         menu.addMenu(new ModelMenu("Invoice list", new ImageIcon(getClass().getResource("/icon/list.png"))));
+        menu.addMenu(new ModelMenu("Google Map", new ImageIcon(getClass().getResource("/icon/ggmap.png"))));
         menu.addMenu(new ModelMenu("Setting", new ImageIcon(getClass().getResource("/icon/setting.png"))));
 
         body.add(menu, "w 50!");

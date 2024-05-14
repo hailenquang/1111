@@ -51,7 +51,7 @@ public class ModelItem {
     public void setImage(Icon image) {
         this.image = image;
     }
-
+    
     public ModelItem(int itemID, String itemName, String description, double price, String brandName, Icon image) {
         this.itemID = itemID;
         this.itemName = itemName;
@@ -60,7 +60,7 @@ public class ModelItem {
         this.brandName = brandName;
         this.image = image;
     }
-
+    
     public ModelItem() {
     }
 
