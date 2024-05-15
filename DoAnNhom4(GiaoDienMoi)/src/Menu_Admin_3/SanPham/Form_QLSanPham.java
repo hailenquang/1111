@@ -1,6 +1,9 @@
 
 package Menu_Admin_3.SanPham;
 
+import java.awt.Image;
+import javax.swing.ImageIcon;
+
 public class Form_QLSanPham extends javax.swing.JPanel {
 
     public Form_QLSanPham() {
@@ -12,6 +15,7 @@ public class Form_QLSanPham extends javax.swing.JPanel {
         F.setVisible(true);
         this.setVisible(false);
     }
+    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -3056,6 +3060,11 @@ public class Form_QLSanPham extends javax.swing.JPanel {
         panelShadow75.setBackground(new java.awt.Color(255, 255, 255));
         panelShadow75.setBorder(javax.swing.BorderFactory.createEmptyBorder(15, 15, 15, 15));
         panelShadow75.setShadowOpacity(0.3F);
+        panelShadow75.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                panelShadow75MouseClicked(evt);
+            }
+        });
 
         pictureBox47.setImage(new javax.swing.ImageIcon(getClass().getResource("/image/oppo find n2 flip.png"))); // NOI18N
         pictureBox47.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -4255,6 +4264,10 @@ public class Form_QLSanPham extends javax.swing.JPanel {
        ClikSP();
     }//GEN-LAST:event_pictureBox55MouseClicked
 
+    private void panelShadow75MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelShadow75MouseClicked
+         ClikSP();
+    }//GEN-LAST:event_panelShadow75MouseClicked
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private Menu_Admin_3.SanPham.ImageAvatar imageAvatar19;

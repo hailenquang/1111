@@ -5028,6 +5028,9 @@
                             </Property>
                             <Property name="shadowOpacity" type="float" value="0.3"/>
                           </Properties>
+                          <Events>
+                            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="panelShadow75MouseClicked"/>
+                          </Events>
 
                           <Layout>
                             <DimensionLayout dim="0">
