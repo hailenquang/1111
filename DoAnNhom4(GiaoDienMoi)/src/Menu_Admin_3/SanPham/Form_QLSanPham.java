@@ -4151,121 +4151,179 @@ public class Form_QLSanPham extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void pictureBox22MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pictureBox22MouseClicked
-        ClikSP();
+        From_TTIP15PRM F = new From_TTIP15PRM();
+        F.setVisible(true);
+        this.setVisible(false);
 
     }//GEN-LAST:event_pictureBox22MouseClicked
 
     private void pictureBox24MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pictureBox24MouseClicked
-       ClikSP();
+       From_TTIP15PR F = new From_TTIP15PR();
+        F.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_pictureBox24MouseClicked
 
     private void pictureBox25MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pictureBox25MouseClicked
-       ClikSP();
+       From_TTIP15PL F = new From_TTIP15PL();
+        F.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_pictureBox25MouseClicked
 
     private void pictureBox21MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pictureBox21MouseClicked
-       ClikSP();
+      From_TTIP15 F = new From_TTIP15();
+        F.setVisible(true);
+        this.setVisible(false);
 
     }//GEN-LAST:event_pictureBox21MouseClicked
 
     private void pictureBox19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pictureBox19MouseClicked
-       ClikSP();
+       From_TTIP14PLM F = new From_TTIP14PLM();
+        F.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_pictureBox19MouseClicked
 
     private void pictureBox23MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pictureBox23MouseClicked
-        ClikSP();
+         From_TTIP14PR F = new From_TTIP14PR();
+        F.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_pictureBox23MouseClicked
 
     private void pictureBox26MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pictureBox26MouseClicked
-        ClikSP();
+         From_TTIP14PL F = new From_TTIP14PL();
+        F.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_pictureBox26MouseClicked
 
     private void pictureBox27MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pictureBox27MouseClicked
-        ClikSP();
+        From_TTIP14 F = new From_TTIP14();
+        F.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_pictureBox27MouseClicked
 
     private void pictureBox28MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pictureBox28MouseClicked
-        ClikSP();
+        From_TTIP13PRM F = new From_TTIP13PRM();
+        F.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_pictureBox28MouseClicked
 
     private void pictureBox20MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pictureBox20MouseClicked
-        ClikSP();
+         From_TTIP13PR F = new From_TTIP13PR();
+        F.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_pictureBox20MouseClicked
 
     private void pictureBox29MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pictureBox29MouseClicked
-        ClikSP();
+         From_TTIP13 F = new From_TTIP13();
+        F.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_pictureBox29MouseClicked
 
     private void pictureBox30MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pictureBox30MouseClicked
-        ClikSP();
+         From_TTIP12PRM F = new From_TTIP12PRM();
+        F.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_pictureBox30MouseClicked
 
     private void pictureBox31MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pictureBox31MouseClicked
-        ClikSP();
+         From_TTIP12PR F = new From_TTIP12PR();
+        F.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_pictureBox31MouseClicked
 
     private void pictureBox32MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pictureBox32MouseClicked
-       ClikSP();
+        From_TTIP12 F = new From_TTIP12();
+        F.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_pictureBox32MouseClicked
 
     private void pictureBox34MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pictureBox34MouseClicked
-        ClikSP();
+         From_TTSS24UTRA F = new From_TTSS24UTRA();
+        F.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_pictureBox34MouseClicked
 
     private void pictureBox35MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pictureBox35MouseClicked
-        ClikSP();
+         From_TTSS24 F = new From_TTSS24();
+        F.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_pictureBox35MouseClicked
 
     private void pictureBox36MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pictureBox36MouseClicked
-        ClikSP();
+         From_TTSSZF4 F = new From_TTSSZF4();
+        F.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_pictureBox36MouseClicked
 
     private void pictureBox33MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pictureBox33MouseClicked
-       ClikSP();
+       From_TTSSZF5 F = new From_TTSSZF5();
+        F.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_pictureBox33MouseClicked
 
     private void pictureBox37MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pictureBox37MouseClicked
-        ClikSP();
+        From_TTSSZFO5 F = new From_TTSSZFO5();
+        F.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_pictureBox37MouseClicked
 
     private void panelShadow74MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelShadow74MouseClicked
-       ClikSP();
+       From_TTOPA18 F = new From_TTOPA18();
+        F.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_panelShadow74MouseClicked
 
     private void pictureBox49MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pictureBox49MouseClicked
-       ClikSP();
+       From_TTOPA38 F = new From_TTOPA38();
+        F.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_pictureBox49MouseClicked
 
     private void pictureBox50MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pictureBox50MouseClicked
-        ClikSP();
+       From_TTOPA57 F = new From_TTOPA57();
+        F.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_pictureBox50MouseClicked
 
     private void pictureBox47MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pictureBox47MouseClicked
-        ClikSP();
+        From_TTOPN2F5G F = new From_TTOPN2F5G();
+        F.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_pictureBox47MouseClicked
 
     private void pictureBox51MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pictureBox51MouseClicked
-        ClikSP();
+         From_TTOPN35G F = new From_TTOPN35G();
+        F.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_pictureBox51MouseClicked
 
     private void pictureBox52MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pictureBox52MouseClicked
-       ClikSP();
+       From_TTOPN35G F = new From_TTOPN35G();
+        F.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_pictureBox52MouseClicked
 
     private void pictureBox53MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pictureBox53MouseClicked
-       ClikSP();
+       From_TTOPN3F5G F = new From_TTOPN3F5G();
+        F.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_pictureBox53MouseClicked
 
     private void pictureBox54MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pictureBox54MouseClicked
-       ClikSP();
+       From_TTOP11F5G F = new From_TTOP11F5G();
+        F.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_pictureBox54MouseClicked
 
     private void pictureBox55MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pictureBox55MouseClicked
-       ClikSP();
+       From_TTOP11PR F = new From_TTOP11PR();
+        F.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_pictureBox55MouseClicked
 
     private void panelShadow75MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelShadow75MouseClicked
-         ClikSP();
+          From_TTOP115G F = new From_TTOP115G();
+        F.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_panelShadow75MouseClicked
     
 

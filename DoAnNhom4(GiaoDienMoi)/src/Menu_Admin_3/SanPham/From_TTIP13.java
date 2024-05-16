@@ -22,7 +22,7 @@ public class From_TTIP13 extends javax.swing.JFrame {
             System.out.println("Image not found: " + e.getMessage());
         }
     }
-    private String[] imagePaths = {"/imageIP/p1.jpg", "/imageIP/p2.jpg", "/imageIP/p3.jpg", "/imageIP/p4.jpg", "/imageIP/p5.jpg", "/imageIP/p6.jpg", "/imageIP/p7.jpg", "/imageIP/p8.jpg", "/imageIP/p9.jpg", "/imageIP/p10.jpg", "/imageIP/p11.png"};
+    private String[] imagePaths = {"/imageIP/ip131.jpeg","/imageIP/ip132.jpg","/imageIP/ip133.jpg","/imageIP/ip134.jpg","/imageIP/ip135.jpg","/imageIP/ip136.jpg","/imageIP/ip137.jpg","/imageIP/ip138.jpg","/imageIP/ip139.jpeg","/imageIP/ip1310.jpg","/imageIP/ip1311.jpeg","/imageIP/ip1312.jpeg","/imageIP/ip1313.jpeg","/imageIP/ip1315.jpeg","/imageIP/ip1317.jpeg"};
     private int currentImagePathIndex = 0;
 
     @SuppressWarnings("unchecked")
@@ -32,6 +32,7 @@ public class From_TTIP13 extends javax.swing.JFrame {
         TTAvata = new javax.swing.JPanel();
         Avata = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -65,12 +66,22 @@ public class From_TTIP13 extends javax.swing.JFrame {
             }
         });
 
+        jLabel3.setFont(new java.awt.Font("xiaowei", 3, 48)); // NOI18N
+        jLabel3.setText("<");
+        jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel3MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(11, 11, 11)
+                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(TTAvata, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -85,7 +96,10 @@ public class From_TTIP13 extends javax.swing.JFrame {
                         .addComponent(jLabel2))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(TTAvata, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(TTAvata, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(223, 223, 223)
+                        .addComponent(jLabel3)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -103,12 +117,19 @@ public class From_TTIP13 extends javax.swing.JFrame {
 
     }//GEN-LAST:event_TTAvataMouseClicked
 
+    private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
+        currentImagePathIndex = (currentImagePathIndex + 1) % imagePaths.length;
+        String newImagePath = imagePaths[currentImagePathIndex];
+
+        setAvatarImage(newImagePath);
+    }//GEN-LAST:event_jLabel3MouseClicked
+
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 From_TTIP13 form = new From_TTIP13();
 
-                String imagePath1 = "/imageIP/p1.jpg";
+                String imagePath1 = "/imageIP/ip131.jpeg";
                 form.setAvatarImage(imagePath1);
                 form.setVisible(true);
             }
@@ -119,5 +140,6 @@ public class From_TTIP13 extends javax.swing.JFrame {
     private javax.swing.JLabel Avata;
     private javax.swing.JPanel TTAvata;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     // End of variables declaration//GEN-END:variables
 }

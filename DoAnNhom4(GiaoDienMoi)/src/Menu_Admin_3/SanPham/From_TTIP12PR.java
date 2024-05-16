@@ -23,6 +23,7 @@ public class From_TTIP12PR extends javax.swing.JFrame {
         }
     }
     private String[] imagePaths = {"/imageIP/12pr1.jpg","/imageIP/12pr2.jpg","/imageIP/12pr3.jpg","/imageIP/12pr4.jpg","/imageIP/12pr5.jpg","/imageIP/12pr6.jpg","/imageIP/12pr7.jpg","/imageIP/12pr8.jpg","/imageIP/12pr9.jpg","/imageIP/12pr10.jpg","/imageIP/12pr11.jpg","/imageIP/12pr12.jpg","/imageIP/12pr13.jpg","/imageIP/12pr14.jpg"};
+     
     private int currentImagePathIndex = 0;
 
     @SuppressWarnings("unchecked")
@@ -32,6 +33,7 @@ public class From_TTIP12PR extends javax.swing.JFrame {
         TTAvata = new javax.swing.JPanel();
         Avata = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -65,12 +67,22 @@ public class From_TTIP12PR extends javax.swing.JFrame {
             }
         });
 
+        jLabel3.setFont(new java.awt.Font("xiaowei", 3, 48)); // NOI18N
+        jLabel3.setText("<");
+        jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel3MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(107, 107, 107)
+                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(TTAvata, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -85,7 +97,10 @@ public class From_TTIP12PR extends javax.swing.JFrame {
                         .addComponent(jLabel2))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(TTAvata, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(TTAvata, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(213, 213, 213)
+                        .addComponent(jLabel3)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -103,6 +118,13 @@ public class From_TTIP12PR extends javax.swing.JFrame {
 
     }//GEN-LAST:event_TTAvataMouseClicked
 
+    private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
+         currentImagePathIndex = (currentImagePathIndex - 1 + imagePaths.length) % imagePaths.length;
+    String newImagePath = imagePaths[currentImagePathIndex];
+
+    setAvatarImage(newImagePath);
+    }//GEN-LAST:event_jLabel3MouseClicked
+
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
@@ -119,5 +141,6 @@ public class From_TTIP12PR extends javax.swing.JFrame {
     private javax.swing.JLabel Avata;
     private javax.swing.JPanel TTAvata;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     // End of variables declaration//GEN-END:variables
 }
